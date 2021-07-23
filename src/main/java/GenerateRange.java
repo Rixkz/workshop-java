@@ -18,4 +18,13 @@ public class GenerateRange {
             return this.input.charAt(1) - 47;
         }
     }
+
+    public int getEndNumber() {
+        if (!isStartWithInclude()) {
+            return this.input.charAt(3) - 48;
+        } else {
+            return this.input.charAt(3) - 49;
+        }
+
+    }
 }
