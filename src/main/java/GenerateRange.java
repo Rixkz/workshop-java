@@ -8,4 +8,8 @@ public class GenerateRange {
     public boolean isStartWithInclude() {
         return this.input.startsWith("[");
     }
+
+    public boolean isStartWithExclude() {
+        return this.input.startsWith("(");
+    }
 }
