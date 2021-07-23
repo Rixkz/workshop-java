@@ -14,7 +14,7 @@ class GenerateRangeTest {
     @DisplayName("Test input (1,5] start must be ( (exclude symbol)")
     public void startWithExcludeSymbol() {
         GenerateRange generateRange = new GenerateRange("(1,5]");
-        boolean validateResult = generateRange.isStartWithExclude();
-        assertTrue(validateResult);
+        boolean validateResult = generateRange.isStartWithInclude();
+        assertFalse(validateResult);
     }
 }
