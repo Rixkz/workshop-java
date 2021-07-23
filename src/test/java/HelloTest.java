@@ -14,6 +14,6 @@ class HelloTest {
         // Act
         String displayResult = hello.greetingName(name);
         // Assert
-        assertEquals(String.format("Hello %s", name), displayResult);
+        assertEquals("Hello Adisorn", displayResult);
     }
 }
