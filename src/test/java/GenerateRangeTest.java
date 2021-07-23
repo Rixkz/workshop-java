@@ -17,4 +17,19 @@ class GenerateRangeTest {
         boolean validateResult = generateRange.isStartWithInclude();
         assertFalse(validateResult);
     }
+
+    @Test
+    @DisplayName("Test input [1,5] result must be 1")
+    public void startWithNumberInclude() {
+        GenerateRange generateRange = new GenerateRange("[1,5]");
+        int validateResult = generateRange.getStartNumber();
+        assertEquals(1, validateResult);
+    }
+    @Test
+    @DisplayName("Test input (1,5] result must be 2")
+    public void startWithNumberExclude() {
+        GenerateRange generateRange = new GenerateRange("(1,5]");
+        int validateResult = generateRange.getStartNumber();
+        assertEquals(2, validateResult);
+    }
 }
