@@ -38,7 +38,6 @@ class GenerateRangeTest {
         int validateResult = generateRange.getEndNumber();
         assertEquals(5, validateResult);
     }
-
     @Test
     @DisplayName("Test input [1,5) result must be 4")
     public void endWithNumberExclude() {

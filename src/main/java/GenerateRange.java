@@ -25,6 +25,5 @@ public class GenerateRange {
         } else {
             return this.input.charAt(3) - 49;
         }
-
     }
 }
